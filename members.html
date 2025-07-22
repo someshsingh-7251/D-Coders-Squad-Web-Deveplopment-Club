@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DCoder Squad Members</title>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css"/>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      padding: 12px 15px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #0077cc;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    .note {
+      margin-top: 20px;
+      font-size: 0.9em;
+      color: #666;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+
+      th {
+        position: sticky;
+        top: 0;
+        background: #0077cc;
+      }
+
+      td {
+        border: none;
+        position: relative;
+        padding-left: 50%;
+      }
+
+      td::before {
+        position: absolute;
+        left: 10px;
+        width: 45%;
+        white-space: nowrap;
+        font-weight: bold;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>D-Coders Squad-Web Development Club-Members</h1>
+
+  <table id="membersTable">
+    <thead>
+      <tr>
+        <th>Sr. No.</th>
+        <th>Name</th>
+        <th>Role</th>
+        <th>CU ID</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td>1</td>
+        <td>Somesh Singh</td>
+        <td>Lead - Web Dev</td>
+        <td>21COCS1234</td>
+        <td>somesh@example.com</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Avinash Singh</td>
+        <td>App Developer</td>
+        <td>21COCS5678</td>
+        <td>avinash@example.com</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Tarana Kapoor</td>
+        <td>UI/UX Designer</td>
+        <td>21COCS9876</td>
+        <td>tarana@example.com</td>
+      </tr>
+      <!-- Add more rows as per spreadsheet -->
+    </tbody>
+  </table>
+
+  <div class="note">
+    Contact details are hidden for privacy. Data is based on internal DCoder Squad records.
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#membersTable').DataTable();
+    });
+  </script>
+</body>
+</html>
