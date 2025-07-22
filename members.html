@@ -3,129 +3,73 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>DCoder Squad Members</title>
-  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css"/>
+  <title>Members | D-Coders Squad</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #1e1e2f;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+    header img {
+      height: 50px;
+      vertical-align: middle;
+    }
+    h1 {
+      display: inline-block;
+      margin-left: 10px;
+      font-size: 1.8rem;
+      vertical-align: middle;
+    }
+    section {
       padding: 20px;
+    }
+    .sheet-container {
+      margin-bottom: 40px;
+    }
+    iframe {
+      width: 100%;
+      height: 500px;
+      border: none;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .quiz-title {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
       color: #333;
     }
-
-    h1 {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      background-color: #fff;
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-
-    th, td {
-      padding: 12px 15px;
-      text-align: left;
-    }
-
-    th {
-      background-color: #0077cc;
+    footer {
+      margin-top: 3rem;
+      background-color: #222;
       color: white;
-    }
-
-    tr:nth-child(even) {
-      background-color: #f2f2f2;
-    }
-
-    .note {
-      margin-top: 20px;
-      font-size: 0.9em;
-      color: #666;
-      text-align: center;
-    }
-
-    @media (max-width: 600px) {
-      table, thead, tbody, th, td, tr {
-        display: block;
-      }
-
-      th {
-        position: sticky;
-        top: 0;
-        background: #0077cc;
-      }
-
-      td {
-        border: none;
-        position: relative;
-        padding-left: 50%;
-      }
-
-      td::before {
-        position: absolute;
-        left: 10px;
-        width: 45%;
-        white-space: nowrap;
-        font-weight: bold;
-      }
+      padding: 1rem;
     }
   </style>
 </head>
 <body>
 
-  <h1>D-Coders Squad-Web Development Club-Members</h1>
+  <header>
+    <img src="logo.png" alt="D-Coders Logo" />
+    <h1>D-Coders Squad - Members Dashboard</h1>
+  </header>
 
-  <table id="membersTable">
-    <thead>
-      <tr>
-        <th>Sr. No.</th>
-        <th>Name</th>
-        <th>Role</th>
-        <th>CU ID</th>
-        <th>Email</th>
-      </tr>
-    </thead>
-    <tbody>
-      
-      <tr>
-        <td>1</td>
-        <td>Somesh Singh</td>
-        <td>Lead - Web Dev</td>
-        <td>21COCS1234</td>
-        <td>somesh@example.com</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Avinash Singh</td>
-        <td>App Developer</td>
-        <td>21COCS5678</td>
-        <td>avinash@example.com</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>Tarana Kapoor</td>
-        <td>UI/UX Designer</td>
-        <td>21COCS9876</td>
-        <td>tarana@example.com</td>
-      </tr>
-      <!-- Add more rows as per spreadsheet -->
-    </tbody>
-  </table>
+  <section>
+    <div class="sheet-container">
+      <div class="Members">Members List</div>
+      <iframe src="https://docs.google.com/spreadsheets/d/1xFRlf2QuHEsxUvNK3eEBPvw9Ro42dL6ELEtqvjhHJi0/edit?usp=sharing"></iframe>
+    </div>
 
-  <div class="note">
-    Contact details are hidden for privacy. Data is based on internal DCoder Squad records.
-  </div>
+    
+  </section>
+ <footer>
+    &copy; 2025 D-Coders Squad | COER University | Designed & Developed by Somesh Singh, Built with 💻 + 📊 + ☕
+  </footer>
 
-  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $('#membersTable').DataTable();
-    });
-  </script>
 </body>
 </html>
