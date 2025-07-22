@@ -86,11 +86,11 @@ main {
 }
 
 footer {
-  text-align: center;
-  background: #eee;
-  padding: 1rem;
-  font-size: 0.9rem;
-}
+      margin-top: 3rem;
+      background-color: #222;
+      color: white;
+      padding: 1rem;
+    }
 
 body.dark footer {
   background: #1f1f1f;
