@@ -7,16 +7,57 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f4f6f8;
+      background-color: #f9f9f9;
       margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #212121;
+      color: white;
       padding: 20px;
+      text-align: center;
     }
 
     h1 {
-      text-align: center;
-      color: #333;
+      margin: 0;
+      font-size: 28px;
     }
 
+    main {
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    iframe {
+      border: none;
+      width: 100%;
+      max-width: 1000px;
+      height: 500px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+    }
+
+    footer {
+      background-color: #212121;
+      color: #ccc;
+      padding: 10px;
+      text-align: center;
+      margin-top: 30px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      iframe {
+        height: 400px;
+      }
+    }
     .leader-container {
       display: flex;
       flex-wrap: wrap;
@@ -95,5 +136,8 @@
     </div>
 
   </div>
+  <footer>
+    &copy; 2025 D-Coders Squad | COER University | Designed & Developed by Somesh Singh, Built with 💻 + 📊 + ☕
+  </footer>
 </body>
 </html>
